@@ -30,8 +30,12 @@ public abstract class Fish {
 
     public abstract void feed();
 
+    public void growWeight(int growth){
+        this.weight += growth;
+    }
+
     public String getStatus(){
-        return name + ", weight: " + weight + ", color: " + ", short-term memory loss: " + hasMemoryLoss();
+        return name + ", weight: " + weight + ", color: " + color + ", short-term memory loss: " + hasMemoryLoss();
     }
 
 }
